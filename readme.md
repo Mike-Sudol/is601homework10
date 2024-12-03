@@ -6,7 +6,9 @@
   - All issues should be merged into the main branch, following the Git workflow and best practices.
 
 1. **Username validation**: [Link](https://google.com) is a powerful tool for tracking bugs, enhancements, and other tasks related to the project. It allows you to create, assign, and prioritize issues, facilitating effective collaboration among team members.
+
 2.**Password validation**:
+   
 3. **Profile field edge cases**
 
 
