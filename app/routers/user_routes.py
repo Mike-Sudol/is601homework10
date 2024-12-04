@@ -142,11 +142,11 @@ async def create_user(user: UserCreate, request: Request, db: AsyncSession = Dep
     existing_email = await UserService.get_by_email(db, user.email)
     if existing_email:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Email already exists")
-    
+    """
     existing_user = await UserService.get_by_nickname(db, user.nickname)
     if existing_user:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Username already exists")
-    
+    """
     created_user = await UserService.create(db, user.model_dump(), email_service)
     if not created_user:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to create user")
