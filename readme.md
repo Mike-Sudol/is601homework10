@@ -1,7 +1,5 @@
 # Event Manager Company: Software QA Analyst/Developer Onboarding Assignment
 ## Issues
-  - Links to five issues, with accompanying test code and necessary application code modifications.
-  - Each issue should be well-documented, explaining the problem, the steps taken to resolve it, and the outcome. Proper documentation helps others understand your work and facilitates future maintenance.
 
 1. **Username validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/8) 
 Currently we only check if the email is unique when registering, we need to check if the username is as well
