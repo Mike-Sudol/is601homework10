@@ -1,23 +1,28 @@
 # Event Manager Company: Software QA Analyst/Developer Onboarding Assignment
 ## Issues
 
-1. **Username validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/8) 
+1. **Username validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/8)
+   
 Currently we only check if the email is unique when registering, we need to check if the username is as well
 
 
-2. **Add UserIDs to testing**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/4) 
+2. **Add UserIDs to testing**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/4)
+   
 Our current test schema is using string for ids, we should be using uuid
 
 
 3. **Password validation**[Link](https://github.com/Mike-Sudol/is601homework10/issues/2):
+   
 Were not sufficiently validating our passwords, we need to add some extra precautions
    
 
-4. **Email validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/10) 
+4. **Email validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/10)
+   
 We need to better check if our emails are valid before we pass them on
 
 
-5. **Access Tokens**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/1) 
+5. **Access Tokens**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/1)
+    
 Our tests don't have the access tokens they need to run the tests
 
 
