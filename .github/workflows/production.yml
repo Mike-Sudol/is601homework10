@@ -45,6 +45,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
+      - name: Run tests with Pytest
+        env:
+          DATABASE_URL: postgresql+asyncpg://user:password@localhost:5432/myappdb  # Configure the DATABASE_URL environment variable for tests
+        run: pytest
 
   build-and-push-docker:
     needs: test
@@ -66,15 +70,15 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: Mike-Sudol/is601homework10:${{ github.sha }} # Uses the Git SHA for tagging
+          tags: ms2649/is601homework10:${{ github.sha }} # Uses the Git SHA for tagging
           platforms: linux/amd64,linux/arm64 # Multi-platform support
-          cache-from: type=registry,ref=Mike-Sudol/is601homework10:cache
+          cache-from: type=registry,ref=ms2649/is601homework10:cache
           cache-to: type=inline,mode=max
           
       - name: Scan the Docker image
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'Mike-Sudol/is601homework10:${{ github.sha }}'
+          image-ref: 'ms2649/is601homework10:${{ github.sha }}'
           format: 'table'
           exit-code: '0' # Fail the job if vulnerabilities are found
           ignore-unfixed: true
