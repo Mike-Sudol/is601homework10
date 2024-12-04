@@ -3,13 +3,20 @@
   - Links to five issues, with accompanying test code and necessary application code modifications.
   - Each issue should be well-documented, explaining the problem, the steps taken to resolve it, and the outcome. Proper documentation helps others understand your work and facilitates future maintenance.
 
-1. **Username validation**: [Link](https://google.com) is a powerful tool for tracking bugs, enhancements, and other tasks related to the project. It allows you to create, assign, and prioritize issues, facilitating effective collaboration among team members.
+1. **Username validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/8) 
+Currently we only check if the email is unique when registering, we need to check if the username is as well
 
-2.**Password validation**:
+2. **Add UserIDs to testing**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/4) 
+Our current test schema is using string for ids, we should be using uuid
+
+3.**Password validation**[Link](https://github.com/Mike-Sudol/is601homework10/issues/2):
+Were not sufficiently validating our passwords, we need to add some extra precautions
    
-3. **Profile field edge cases**
+4. **Email validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/10) 
+We need to better check if our emails are valid before we pass them on
 
-
+5. **Access Tokens**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/1) 
+Our tests don't have the access tokens they need to run the tests
 
 ## Pytest Coverage
 ![Coverage](Coverage.png)
