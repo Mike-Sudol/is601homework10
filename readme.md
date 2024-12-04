@@ -6,17 +6,22 @@
 1. **Username validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/8) 
 Currently we only check if the email is unique when registering, we need to check if the username is as well
 
+
 2. **Add UserIDs to testing**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/4) 
 Our current test schema is using string for ids, we should be using uuid
 
-3.**Password validation**[Link](https://github.com/Mike-Sudol/is601homework10/issues/2):
+
+3. **Password validation**[Link](https://github.com/Mike-Sudol/is601homework10/issues/2):
 Were not sufficiently validating our passwords, we need to add some extra precautions
    
+
 4. **Email validation**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/10) 
 We need to better check if our emails are valid before we pass them on
 
+
 5. **Access Tokens**: [Link](https://github.com/Mike-Sudol/is601homework10/issues/1) 
 Our tests don't have the access tokens they need to run the tests
+
 
 ## Pytest Coverage
 ![Coverage](Coverage.png)
@@ -31,4 +36,5 @@ The importance of comprehensive testing cannot be overstated. Running pytest aft
 Equally crucial was the process of thoroughly reading and understanding project documentation. Carefully reviewing the instructor's guidelines, videos, and project readme multiple times helped ensure that I was meeting all project requirements and staying aligned with the intended objectives.
 
 ## Dockerhub Link
-- Link to project image deployed to Dockerhub.
+[Link to project image deployed to Dockerhub](https://gyazo.com/614a2cd4308d2691f8b4ea5db4b4fc53)
+![Docker](Docker.png)
